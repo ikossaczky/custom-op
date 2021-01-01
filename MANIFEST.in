@@ -1,2 +1,5 @@
 recursive-include tensorflow_zero_out *.so
 recursive-include tensorflow_time_two *.so
+
+# Change to the original code from https://github.com/tensorflow/custom-op: 
+recursive-include tensorflow_inner_product *.so

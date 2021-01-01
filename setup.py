@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
+#
+# changes to the original from https://github.com/tensorflow/custom-op repo: 'tensorflow >= 1.15.0' as dependency
 """Setup for pip package."""
 from __future__ import absolute_import
 from __future__ import division
@@ -25,7 +27,7 @@ from setuptools.dist import Distribution
 
 __version__ = '0.0.1'
 REQUIRED_PACKAGES = [
-    'tensorflow >= 2.1.0',
+    'tensorflow >= 1.15.0',
 ]
 project_name = 'tensorflow-custom-ops'
 

@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
+#
+# changes to the original from https://github.com/tensorflow/custom-op repo: included also the following line below: rsync -avm -L --exclude='*_test.py' ${PIP_FILE_PREFIX}tensorflow_inner_product "${TMPDIR}"
 set -e
 set -x
 
@@ -69,6 +71,8 @@ function main() {
   cp ${PIP_FILE_PREFIX}LICENSE "${TMPDIR}"
   rsync -avm -L --exclude='*_test.py' ${PIP_FILE_PREFIX}tensorflow_zero_out "${TMPDIR}"
   rsync -avm -L --exclude='*_test.py' ${PIP_FILE_PREFIX}tensorflow_time_two "${TMPDIR}"
+  rsync -avm -L --exclude='*_test.py' ${PIP_FILE_PREFIX}tensorflow_inner_product "${TMPDIR}"
+
 
   pushd ${TMPDIR}
   echo $(date) : "=== Building wheel"
