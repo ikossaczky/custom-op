@@ -1,3 +1,6 @@
+
+/// Source code from https://github.com/davidstutz/tensorflow-cpp-op-example (Apache 2.0 license)
+/// slight modification: merging some code chunks into one file
 /// \file inner_product_kernels.cc
 /// \author David Stutz
 /// \brief Implementation of a inner product (i.e. fully connected layer)
